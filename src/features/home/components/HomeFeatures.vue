@@ -1,5 +1,4 @@
 <script setup>
-import '@fortawesome/fontawesome-free/css/all.css';
 </script>
 <template>
     <section class="bg-white mt-8 py-10 mb-4">

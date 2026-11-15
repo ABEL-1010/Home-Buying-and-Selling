@@ -1,8 +1,8 @@
 <script setup>
- import phto from '@/assets/img/M.jpg'
- import photo from '@/assets/img/R.jpg'
- import spouse from '@/assets/img/spouse.jpg'
- import healthy from '@/assets/img/healthy.jpg'
+ import phto from '@/assets/img/rent-furnished.jpg'
+ import photo from '@/assets/img/logo.jpg'
+ import spouse from '@/assets/img/rent-new-spouses.jpg'
+ import healthy from '@/assets/img/rent-healthy-community.jpg'
  import { ref } from 'vue';
   
   const LocationR = ref('');

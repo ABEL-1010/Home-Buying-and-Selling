@@ -1,8 +1,7 @@
 <script setup>
-import pho from '@/assets/img/R.jpg';
-import AllRight from '@/assets/img/AllRight.jpg';
-import asdf from '@/assets/img/asdf.jpg';
-import thinking from '@/assets/img/thinking.jpg';
+import pho from '@/assets/img/logo.jpg';
+import AllRight from '@/assets/img/buy-card.jpg';
+import asdf from '@/assets/img/action-cards-background.jpg';
 </script>
 
 <template>

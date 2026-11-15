@@ -1,8 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-import bgl from '@/assets/img/bgl.jpg';
-import HomeS from '@/assets/img/HomeS.jpg';
-import '@fortawesome/fontawesome-free/css/all.css';
+import bgl from '@/assets/img/hero-background.jpg';
+import HomeS from '@/assets/img/listing-sample-1.jpg';
 
 
 const searchQuery = ref('');  // Reactive variable for the search input

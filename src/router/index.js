@@ -1,84 +1,79 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import '@fortawesome/fontawesome-free/css/all.css';
-import Home from '@/views/Home.vue'
-import SellView from '@/views/SellView.vue'
-import RentView from '@/views/RentView.vue'
-import BuyView from '@/views/BuyView.vue'
-import SigninView from '@/views/SigninView.vue'
-import AdminView from '@/views/AdminView.vue'
-import AUserManagement from '@/components/AUserManagement.vue'
-import ASiteSetting from '@/components/ASiteSetting.vue'
-import AContentManagement from '@/components/AContentManagement.vue'
-import CreateAccView from '@/views/CreateAccView.vue';
-import AgentView from '@/views/AgentView.vue'
 
-
- // Import your components
+import HomeView from '@/features/home/views/HomeView.vue'
+import BuyView from '@/features/properties/views/BuyView.vue'
+import SellView from '@/features/properties/views/SellView.vue'
+import RentView from '@/features/properties/views/RentView.vue'
+import AgentView from '@/features/agents/views/AgentView.vue'
+import SignInView from '@/features/auth/views/SignInView.vue'
+import CreateAccountView from '@/features/auth/views/CreateAccountView.vue'
+import AdminLayout from '@/features/admin/components/AdminLayout.vue'
+import UserManagementView from '@/features/admin/views/UserManagementView.vue'
+import SiteSettingsView from '@/features/admin/views/SiteSettingsView.vue'
+import ContentManagementView from '@/features/admin/views/ContentManagementView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: HomeView,
   },
   {
     path: '/Buy',
     name: 'Buy',
-    component: BuyView
+    component: BuyView,
   },
   {
     path: '/Sell',
     name: 'Sell',
-    component: SellView
+    component: SellView,
   },
   {
     path: '/Rent',
     name: 'Rent',
-    component: RentView
-  },
-  {
-    path: '/Signin',
-    name: 'Signin',
-    component: SigninView
-  },
-  {
-    path: '/admin',
-    name: 'Admin',
-    component: AdminView,
-    children:[
-      {
-        path: 'user-management',
-        name: 'UserManagement',
-        component: AUserManagement
-      },
-      {
-        path: 'site-settings',
-        name: 'SiteSettings',
-        component: ASiteSetting
-      },
-      {
-        path:'content-management',
-        name:'ContentManagement',
-        component:AContentManagement
-      },
-    ]
-  },
-  {
-    path: '/Create-account',
-    name: 'CreateAccount',
-    component: CreateAccView
+    component: RentView,
   },
   {
     path: '/agent',
     name: 'Agent',
-    component: AgentView
+    component: AgentView,
   },
-
-  
+  {
+    path: '/Signin',
+    name: 'Signin',
+    component: SignInView,
+  },
+  {
+    path: '/Create-account',
+    name: 'CreateAccount',
+    component: CreateAccountView,
+  },
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: AdminLayout,
+    children: [
+      {
+        path: 'user-management',
+        name: 'UserManagement',
+        component: UserManagementView,
+      },
+      {
+        path: 'site-settings',
+        name: 'SiteSettings',
+        component: SiteSettingsView,
+      },
+      {
+        path: 'content-management',
+        name: 'ContentManagement',
+        component: ContentManagementView,
+      },
+    ],
+  },
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.Base_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
 

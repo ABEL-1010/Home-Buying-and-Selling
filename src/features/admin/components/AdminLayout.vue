@@ -1,5 +1,5 @@
 <script setup>
-import pic from '@/assets/img/Hasab.jpg'
+import pic from '@/assets/img/avatar-placeholder.jpg'
 import { ref } from 'vue';
 
 

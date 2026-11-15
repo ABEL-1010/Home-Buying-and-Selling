@@ -1,6 +1,5 @@
 <script setup>
-import think from '@/assets/img/thinking.jpg'
-import Hasab from '@/assets/img/Hasab.jpg'
+import think from '@/assets/img/area-placeholder.jpg'
 
 import { ref } from 'vue';
   

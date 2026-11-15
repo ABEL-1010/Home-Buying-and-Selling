@@ -1,6 +1,6 @@
 <script setup>
-import giphy from '@/assets/img/giphy.webp';
-import hasab from '@/assets/img/Hasab.jpg';
+import giphy from '@/assets/img/agent-banner.webp';
+import hasab from '@/assets/img/avatar-placeholder.jpg';
 </script>
 <template>
      <div class='my-10'>

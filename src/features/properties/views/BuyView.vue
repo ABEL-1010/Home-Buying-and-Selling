@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
-import homep from '@/assets/img/homep.jpg';
-import homeS from '@/assets/img/HomeS.jpg';
+import homep from '@/assets/img/listing-sample-2.jpg';
+import homeS from '@/assets/img/listing-sample-1.jpg';
 
 const propertyType = ref('');
 const bedrooms = ref(0);
